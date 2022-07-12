@@ -1,0 +1,11 @@
+{% extends 'index.html'%}
+{% block title %}Home{% endblock title %}
+{% block body%}
+<img src="{{ user_image }}" alt="Italian Trulli" width="500" height="400">
+ 
+<br>
+    <br>
+  <form action="/detect_object" target="_blank">
+        <button button type="submit" class="btn btn-outline-dark btn-sm mx-1" value="Detect Object">Submit</button>
+    </form>
+{% endblock body%}
