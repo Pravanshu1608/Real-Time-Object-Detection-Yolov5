@@ -1,0 +1,13 @@
+{% extends 'index.html'%}
+{% block title %}Home{% endblock title %}
+{% block body%}
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
+        <button button type="submit" class="btn btn-outline-dark btn-sm mx-1" value="Submit">Submit</button>
+    </form>
+  <br>
+  <p style="color:green;">file uploaded successfully</p>
+  <form action="/show_image" target="_blank">
+    <button button type="submit" class="btn btn-outline-dark btn-sm mx-1" value="Display Image">Display</button>
+  </form>
+{% endblock body%}
