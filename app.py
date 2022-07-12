@@ -26,7 +26,7 @@ app = Flask(__name__)
         #.autoshape()  # force_reload = recache latest code
 #'''
 # Load Custom Model
-model = torch.hub.load("ultralytics/yolov5", "custom", path = r"C:\Users\DELL\Desktop\aditi\datasets\today\best.pt", force_reload=True)
+model = torch.hub.load("ultralytics/yolov5", "custom", path = r"C:\Users\prava\Desktop\Flask\yolov5\datasets\today\best.pt", force_reload=True)
 
 # Set Model Settings
 model.eval()
